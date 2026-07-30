@@ -13,12 +13,115 @@
 </head>
 <body>
     <div class="content">
-        <h1>Help</h1>
-      
-        <p>Work in progress...</p>
+  <h1>Help</h1>
 		
-		<p>It’ll be ready when it’s ready.</p>
-   
-    </div>
+    <p>Last updated: July 30, 2026</p>
+		
+    <p>The app helps you record massage work, track monthly performance and tips, and estimate your net salary for a selected month. The result depends on the information you enter and the payroll rules available for that period.</p>
+
+    <h2>Selecting a Period</h2>
+		
+    <p>Use the month and year controls at the top of the main screen to select the period you want to view or edit. Saved data for the selected period is loaded automatically.</p>
+    <p>Save your changes before selecting another month or year. Changing the period loads the saved data for the new period and may discard unsaved changes from the previous one.</p>
+
+    <h2>Schedule Mode and Day Status</h2>
+		
+    <p>Tap the Schedule button to turn Schedule mode on or off.</p>
+    <p>• Schedule mode on: all days are shown, and each day can be assigned a work status.</p>
+    <p>• Schedule mode off: non-working days are hidden, and only active workdays remain visible.</p>
+    <p>Tap a date while Schedule mode is on to cycle through its statuses.</p>
+    <p>• Non-working day: the day is excluded from workday, massage, and salary calculations.</p>
+    <p>• Standard workday: massage amounts use the normal service rates.</p>
+    <p>• High-rate workday: massage amounts use the high-rate multiplier.</p>
+    <p>A Saturday is treated as a high-rate workday for earnings calculations. When a previously non-working Saturday is activated, the app automatically selects the high-rate status.</p>
+
+    <h2>Entering Daily Work</h2>
+		
+    <p>For each working date, enter the number of Short, Regular, and Long massages. Enter daily tips in the Tips field if you want to track them on the main screen.</p>
+    <p>The Amount for a date is calculated automatically from the massage counts and the configured service rates. On a high-rate workday or Saturday, the service amount is multiplied by 1.5. Daily tips are shown separately from the service amount.</p>
+    <p>Daily tips entered on the main screen are not transferred automatically to the net salary calculation. Enter the tips shown on your payslip separately in the Add Tips field in the Control Center.</p>
+
+    <h2>Massage Rates</h2>
+		
+    <p>Open the Control Center and select Configure to review the Short, Regular, and Long massage rates. Default rates may be supplied for a supported period, but you should compare them with the rates that actually apply to your work.</p>
+    <p>All three massage rates must be greater than zero before the app can calculate the salary estimate.</p>
+
+    <h2>Monthly Summary and Progress</h2>
+		
+    <p>The summary shows the number of workdays, total massages, Short, Regular, and Long massage totals, monthly tips, and the estimated Result.</p>
+    <p>The Short, Regular, and Long totals are displayed as standard/high-rate counts. For example, 18-4 means 18 massages on standard workdays and 4 massages on high-rate workdays.</p>
+    <p>The progress indicator uses the actual number of massages and advances through the monthly targets of 100, 120, 140, 160, 180, and 200 massages.</p>
+
+    <h2>Saving Your Data</h2>
+		
+    <p>Tap Save after changing the schedule, daily entries, rates, or payroll settings. Saving stores the month&#x27;s entries, configuration, and calculated payroll history together.</p>
+    <p>Saving each month is especially important because later tax estimates may use payroll history from earlier months of the same year.</p>
+
+    <h2>Control Center</h2>
+		
+    <p>The Control Center contains payroll calculation settings, Help, Privacy, and Terms sections, and information about the app.</p>
+    <p>Some values, such as massage rates, Hourly Rate, Tax Points, and Travel, are automatically carried over from the previously saved month to the next month. Review these values before relying on the result. Additional income and additional tips must be entered manually each month when applicable.</p>
+
+    <h2>Required Net Salary Settings</h2>
+		
+    <p>The app needs valid work data and payroll settings before it can calculate the Result.</p>
+    <p>• Short, Regular, and Long massage rates must be greater than zero.</p>
+    <p>• Hourly Rate must be greater than zero.</p>
+    <p>• Tax Points must be greater than zero.</p>
+    <p>• Travel must be greater than zero.</p>
+    <p>• The selected month must contain at least one working day and a positive gross work amount.</p>
+    <p>Add Income and Add Tips are optional and may remain at zero. Include Pension can be turned on or off according to the pension settings that apply to you.</p>
+
+    <h2>Payroll Field Guide</h2>
+		
+    <p>Hourly Rate is the hourly rate shown on your payslip. The app also uses it to express the salary subject to pension contributions as an equivalent number of hours.</p>
+    <p>Tax Points is the total number of Israeli income tax credit points that apply to you for the selected period.</p>
+    <p>Travel is the travel expense reimbursement shown on your payslip for the selected month.</p>
+    <p>Add Income is used for other cash payments shown on the payslip that are not generated by the massage and bonus calculation, such as an additional employer payment or a one-time payment.</p>
+    <p>Add Tips represents the tips shown on your payslip for the selected month. This value is independent of the daily tips entered on the main screen.</p>
+    <p>Include Pension controls whether the employee pension contribution is deducted in the estimate.</p>
+
+    <h2>How Net Salary Is Estimated</h2>
+		
+    <p>The app begins with gross pay from massages and the performance bonus. It then adds Travel, Add Income, and Add Tips to calculate the estimated gross pay for the month.</p>
+    <p>The calculation uses the rules in effect for the selected period for Israeli income tax, National Insurance, health insurance, pension contributions, meal benefits and deductions, and any other employer or organization deductions.</p>
+    <p>The salary subject to pension contributions excludes Travel, Add Income, Add Tips, and the additional amount generated by the high-rate workday multiplier. Pension is deducted only when Include Pension is turned on.</p>
+    <p>The number of working days is used to calculate daily meal-related benefits and deductions. Incorrect day statuses can therefore affect both gross earnings and deductions.</p>
+    <p>The Result on the main screen is the estimated net salary after the calculated deductions. It does not include daily tips unless the corresponding payroll amount is entered in Add Tips.</p>
+
+    <h2>Tax History and the Start of a New Year</h2>
+		
+    <p>January marks the start of a new tax year. From February onward, the app can use saved salary calculation data from the previous month to estimate cumulative income tax.</p>
+    <p>For the most consistent result, complete and save each month in chronological order. Check that the work data and payroll settings for each saved month are correct before continuing to the next month.</p>
+    <p>If one or more earlier months are missing from the saved calculation history, the app falls back to a stand-alone monthly tax estimate. This can create a noticeable difference from a payslip that uses complete year-to-date payroll data.</p>
+
+    <h2>Why the Result May Be Zero</h2>
+		
+    <p>The Result may remain at zero when a required value is missing.</p>
+    <p>Check the following:</p>
+    <p>• At least one date is marked as a working day.</p>
+    <p>• Massage entries produce a positive gross work amount.</p>
+    <p>• All three massage rates are entered and greater than zero.</p>
+    <p>• Hourly Rate, Tax Points, and Travel are entered and greater than zero.</p>
+    <p>• The month has been saved after the latest changes.</p>
+
+    <h2>If the Estimate Does Not Match the Payslip</h2>
+		
+    <p>First, verify the selected month and year, the status of each workday, the number and types of massages performed on those days, and the service rates.</p>
+    <p>Then compare Hourly Rate, Tax Points, Travel, Add Income, and Add Tips with the payslip. Confirm that previous months of the same year were saved correctly and in chronological order.</p>
+    <p>Differences may also result from payroll rounding, corrections for previous periods, vacation or sick-leave payments, employer adjustments, tax coordination, other changes, or information shown on the payslip but not entered in the app.</p>
+
+    <h2>Raw Data</h2>
+		
+    <p>The Raw Data section displays the gross salary actually calculated for the selected period. Unsaved changes made on the main screen are not included in the gross salary calculation. Before using Raw Data to compare values or verify a calculation, save the current month&#x27;s data on the main screen.</p>
+
+    <h2>Online Help, Privacy and Terms</h2>
+		
+    <p>Help, Privacy, and Terms are loaded online and require an internet connection. If a document cannot be loaded, check your connection and open the section again.</p>
+
+    <h2>Accuracy Notice</h2>
+		
+    <p>The app provides an estimate for personal reference only. It is not an official payslip, tax assessment, accounting service, or legal advice. Your employer&#x27;s payslip and the calculations of the relevant authorities remain the authoritative records.</p>
+</div>
 </body>
 </html>
